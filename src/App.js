@@ -6,9 +6,12 @@ import Form from './components/Form.js';
 function App() {
   return (
     <div className="App">
-      <Counter />
+      {/* <Counter /> */}
       {/* <Event /> */}
       {/* <Form /> */}
+
+      
+
     </div>
   );
 }
