@@ -5,12 +5,11 @@ function Counter() {
 
     useEffect(() => {
         document.title = `You clicked ${count} times`;
-        console.log("Hello")
     }, [count]);
 
         return (
             <div>
-                <p>You clicked {count} times</p>
+                <p>Value is: {count}</p>
                 
                 <button onClick={() => setCount(prev => prev + 1)}>Increment</button>
                 <button onClick={() => setCount(prev => prev - 1)}>Decrement</button>
