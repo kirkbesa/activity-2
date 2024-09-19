@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Counter from './components/Counter.js';
 import Event from './components/Event.js';
@@ -10,9 +9,9 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 import NotFound from './pages/NotFound.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-function App() {
+export default function App() {
   return (
     <Router>
       <div className="App">
@@ -32,6 +31,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
-ReactDOM.render(<App />, document.getElementById('root'));
