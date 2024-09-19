@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 export default function Navigation() {
     return (
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/counter">Counter</Link></li>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <Link to="/"><li id="home">Home</li></Link>
+                    <Link to="/about"><li>About</li></Link>
+                    <Link to="/contact"><li>Contact</li></Link>
+                    <Link to="/counter"><li>Counter</li></Link>
+                </ul>
+            </nav>
+        </header>
     );
 }
