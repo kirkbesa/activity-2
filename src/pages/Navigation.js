@@ -22,7 +22,7 @@ export default function Navigation() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">Features</Nav.Link>
+                        <Nav.Link as={Link} to="Home">Home</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
                         <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
                         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
